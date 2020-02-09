@@ -6,5 +6,3 @@ and JS.
 
 Additionally, we used Flexbox and jQuery.
 
-Will be updated... =)
-
