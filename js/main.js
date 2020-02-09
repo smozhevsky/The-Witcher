@@ -1,8 +1,8 @@
-var mySwiper = new Swiper('.swiper-container', {
+var mySwiper = new Swiper(".swiper-container", {
   slidesPerView: 1,
   loop: true,
   navigation: {
-    nextEl: '.arrow',
+    nextEl: ".arrow"
   },
   breakpoints: {
     540: {
@@ -11,10 +11,10 @@ var mySwiper = new Swiper('.swiper-container', {
   }
 });
 
-var menuButton = document.querySelector('.menu-button');
-var menu = document.querySelector('.header');
+var menuButton = document.querySelector(".menu-button");
+var menu = document.querySelector(".header");
 
-menuButton.addEventListener('click', function () {
-  menuButton.classList.toggle('menu-button-active');
-  menu.classList.toggle('header-active');
-})
+menuButton.addEventListener("click", function() {
+  menuButton.classList.toggle("menu-button-active");
+  menu.classList.toggle("header-active");
+});
