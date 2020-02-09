@@ -55,9 +55,11 @@ body {
 	line-height: 16px;
 	margin-bottom: 16px;
 	display: block;
+	animation-delay: .1s;
 }
 .rating {
 	display: flex;
+	animation-delay: .3s;
 	/* align-items: center; */
 }
 .rating-number {
@@ -72,19 +74,27 @@ body {
 	line-height: 89px;
 	font-family: 'MasonChronicles', serif;
 	margin-bottom: 10px;
+	animation-delay: .5s;
 }
 .main-description {
 	max-width: 458px;
 	font-size: 14px;
 	line-height: 150%;
 	margin-bottom: 40px;
+	animation-delay: .7s;
 }
 .button {
+	display: inline-block;
 	background-color: #9D2929;
 	border-radius: 8px;
 	color: #fff;
 	border: none;
 	padding: 22px 72px;
+	text-decoration: none;
+	animation-delay: 1s;
+}
+.button:active {
+	color: #fff;
 }
 .main-content {
 	display: flex;
@@ -92,6 +102,9 @@ body {
 	margin-bottom: 85px;
 }
 .play {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	background: #9D2929;
 	height: 100px;
 	width: 100px;
@@ -114,6 +127,7 @@ body {
 	border-radius: 50%;
 	left: -16px;
 	top: -16px;
+	animation: pulse .6s ease-in-out 2s infinite;
 }
 
 /* slider */
@@ -259,6 +273,7 @@ body {
 		background-color: #fff;
 		border: none;
 		cursor: pointer;
+		z-index: 2;
 	}
 	.menu-button::before {
 		content: '';
@@ -304,6 +319,8 @@ body {
 		background-color: #9D2929;
 		width: 250px;
 		padding-bottom: 40px;
+		z-index: 1;
+		border-radius: 0 0 0 50%;
 	}
 	.header-active {
 		display: flex;
